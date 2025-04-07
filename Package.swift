@@ -11,15 +11,13 @@ let package = Package(
     products: [
         .library(
             name: "RandomStringGenerator",
-            type: .dynamic,
             targets: ["RandomStringGenerator"]),
     ],
     targets: [
-        .target(
+        .binaryTarget(
             name: "RandomStringGenerator",
-            dependencies: []),
-        .testTarget(
-            name: "RandomStringGeneratorTests",
-            dependencies: ["RandomStringGenerator"]),
+            url: "https://github.com/sandeshmurdia/RandomStringGenerator/releases/download/1.0.0/RandomStringGenerator.xcframework.zip",
+            checksum: "b7b89dadc53cea048bc4c9966831efab837bdde81f2278d68cabb6704f52b03e"
+        )
     ]
 )

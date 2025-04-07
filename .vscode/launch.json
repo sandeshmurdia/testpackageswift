@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:testpackageswift}",
+            "name": "Debug TestApp",
+            "program": "${workspaceFolder:testpackageswift}/.build/debug/TestApp",
+            "preLaunchTask": "swift: Build Debug TestApp"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:testpackageswift}",
+            "name": "Release TestApp",
+            "program": "${workspaceFolder:testpackageswift}/.build/release/TestApp",
+            "preLaunchTask": "swift: Build Release TestApp"
+        }
+    ]
+}
